@@ -181,7 +181,7 @@ def main():
         #ask player for bet
         bet = toInt(input('How much would you like to bet? (max 10) '))
         #validate bet is within range and a valid number
-        while bet >= chips or bet == 0:
+        while bet > chips or bet == 0:
             if bet >= chips:
                 bet = toInt(input('You don\'t have enough chips \nHow much would you like to bet?'))
             else:
